@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Poetry Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Welcome to Poetry Expand 2.0</h1>
+
+  <section>
+    <h2>Write a Poem</h2>
+    <textarea id="poemInput" rows="5" cols="40" placeholder="Write your poem here..."></textarea><br>
+    <button onclick="submitPoem()">Submit Poem</button>
+    <p id="feedback"></p>
+  </section>
+
+  <section>
+    <h2>Poem Tools</h2>
+    <button onclick="countWords()">Count Words</button>
+    <button onclick="formatPoem()">Format Poem</button>
+    <p id="wordCount"></p>
+  </section>
+
+  <section>
+    <h2>Submitted Poems</h2>
+    <ul id="poemList"></ul>
+  </section>
+
+  <section>
+    <h2>Poetry Tip</h2>
+    <button id="toggleTipBtn">Show/Hide Tip</button>
+    <p id="poetryTip" class="hidden">✨ Tip: Poems are stronger when they show, not just tell.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
